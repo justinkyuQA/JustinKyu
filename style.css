@@ -1,0 +1,199 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#050505;
+color:#d9ffd9;
+font-family:Consolas,Monaco,"Courier New",monospace;
+line-height:1.7;
+}
+
+.container{
+width:92%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+background:#000;
+border-bottom:2px solid #00ff66;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+header .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+padding:20px 0;
+}
+
+h1{
+color:#00ff66;
+font-size:42px;
+}
+
+.subtitle{
+color:#88ff99;
+margin-top:10px;
+}
+
+nav{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+margin-top:15px;
+}
+
+nav a{
+color:#00ff66;
+font-weight:bold;
+text-decoration:none;
+}
+
+nav a:hover{
+color:#ffffff;
+}
+
+.hero{
+padding:120px 0;
+text-align:center;
+background:
+linear-gradient(#001500,#000000);
+}
+
+.hero h2{
+font-size:60px;
+margin-bottom:30px;
+color:#00ff66;
+}
+
+.hero p{
+max-width:850px;
+margin:auto;
+font-size:20px;
+}
+
+.button{
+display:inline-block;
+margin-top:40px;
+padding:16px 34px;
+background:#00aa44;
+color:#ffffff;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+}
+
+.button:hover{
+background:#00ff66;
+color:#000;
+}
+
+section{
+padding:80px 0;
+}
+
+section h2{
+font-size:34px;
+margin-bottom:25px;
+color:#00ff66;
+}
+
+section p{
+font-size:18px;
+margin-bottom:18px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:24px;
+margin-top:30px;
+}
+
+.card{
+background:#0a120a;
+border:1px solid #00aa44;
+border-radius:10px;
+padding:24px;
+transition:.25s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#00ff66;
+box-shadow:0 0 18px rgba(0,255,100,.25);
+}
+
+.card h3{
+color:#66ff99;
+margin-bottom:15px;
+}
+
+ul{
+padding-left:24px;
+}
+
+li{
+margin-bottom:10px;
+}
+
+a{
+color:#00ff66;
+}
+
+a:hover{
+color:#ffffff;
+}
+
+footer{
+background:#000;
+border-top:2px solid #00ff66;
+text-align:center;
+padding:45px 20px;
+color:#88ff99;
+}
+
+hr{
+border:1px solid #004d22;
+margin-bottom:25px;
+}
+
+@media(max-width:800px){
+
+header .container{
+display:block;
+text-align:center;
+}
+
+nav{
+justify-content:center;
+}
+
+.hero h2{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+h1{
+font-size:32px;
+}
+
+section{
+padding:60px 0;
+}
+
+}
